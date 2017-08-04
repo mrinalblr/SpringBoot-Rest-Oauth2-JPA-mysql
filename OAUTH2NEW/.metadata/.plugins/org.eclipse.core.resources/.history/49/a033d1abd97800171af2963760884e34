@@ -1,0 +1,10 @@
+server.port:9700
+spring.datasource.url=jdbc:mysql://localhost:3306/oAuth2DB
+spring.datasource.username=root
+spring.datasource.password=mrinal
+spring.datasource.testWhileIdle = true
+# Show or not log for each sql query
+spring.jpa.show-sql = true
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update

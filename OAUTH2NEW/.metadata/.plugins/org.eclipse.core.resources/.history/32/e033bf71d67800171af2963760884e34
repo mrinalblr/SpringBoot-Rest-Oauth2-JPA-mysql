@@ -1,0 +1,15 @@
+package com.example.demo.controller;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class User {
+
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String userName;
+	private String password;
+	@OneToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+    private List<Role> roles;
+}
